@@ -1,0 +1,58 @@
+.owl-carousel {
+    .owl-nav.disabled{
+        display: block !important;
+    }
+    // <!-- <img src=>../images/pic/slide_n_2_o.jpg
+    // <img src="images/pic/spa.webp">
+    //          <img src="images/pic/slider_n_1.jpg"> -->
+    .slider-1{
+        position: relative;
+        background-image: url("../images/pic/slide_n_2_o.jpg");
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+    }
+    .slider-2{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../images/pic/slider_n_1.jpg"); //inja axha ro midi b onvane background
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    .slider-3{
+        position: relative;
+        background-image: url("../images/pic/spa.webp");
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position:  top 2px;
+
+                        background-size: cover;
+
+    }
+}
+.prev-slide {
+    position: absolute;
+    top: 50% !important;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    font-size: 20px;
+}
+.next-slide {
+    position: absolute;
+    top: 50% !important;
+    right: 0 !important;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    font-size: 20px;
+}
