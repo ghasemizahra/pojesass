@@ -62,7 +62,7 @@
     margin-top: -160px ;
   }
   
-  .slider {
+  .sliderr {
     margin: auto;
     width: 100%;
     font-size: 1.2rem;
@@ -129,8 +129,8 @@
     border: none;
   }
   
-  .slider::before,
-  .slider::after {
+  .sliderr::before,
+  .sliderr::after {
     content: "";
     z-index: 1;
     background: none;
