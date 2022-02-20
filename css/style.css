@@ -222,7 +222,7 @@ output {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-position: top 2px;
+  background-position: 50% 40%;
   background-size: cover;
 }
 
@@ -420,7 +420,7 @@ header .hamburger {
   margin-left: 1rem;
 }
 header .line {
-  background-color: #fff;
+  background-color: white;
   width: 20px;
   height: 1px;
   margin: 5px 0;
@@ -478,6 +478,26 @@ header #hamburger-1.is-active .line:nth-child(3) {
   color: #fff;
   text-decoration: none;
   font-size: 13px;
+}
+
+.m1 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+}
+.m1::after {
+  content: "";
+  background: #6fb586;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  translate: 0.5s;
+}
+.m1:hover::after {
+  left: 0;
 }
 
 form .checkdate {
@@ -565,7 +585,7 @@ form .checkdate {
 .container #quote:before {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -1396,6 +1416,11 @@ img {
   color: #6fb586;
 }
 
+@media only screen and (min-width: 580px) {
+  body {
+    background-color: red;
+  }
+}
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

@@ -31,3 +31,10 @@
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
+
+@mixin  MediaQuery($screen) {
+    @media only screen and(min-width:$screen){
+        @content;//
+    }
+}

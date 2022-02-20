@@ -72,11 +72,12 @@ $(document).ready(function(){
   //اینجا اولین منو
 
   $(document).ready(function(){
-    $(".m1").hover(function(){
+    $(".m1").mouseenter(function(){
       $(this).css({"z-index":"-1","left":"0","right": "100%","bottom":"0","background":"#6fb586", "height":"1px"});
-      }, function(){
-      $(this).css();
-    });})
+      }, $(".m1")).mouseleave(function(){
+      ;
+      });
+  });
     // 
     // 
    

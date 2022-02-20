@@ -103,7 +103,7 @@ header{
      margin-left: 1rem;
     }
       .line{
-        background-color: #fff;
+        background-color: white;
         width: 20px;
         height: 1px;
         margin: 5px 0;
@@ -164,6 +164,27 @@ header{
         text-decoration: none;
         font-size: 13px;
       } 
+    }
+    
+}
+.m1{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: .5rem;
+    &::after{
+        content: "";
+        background: map-get($color-pallets , success);
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        translate: .5s;
+
+    }
+    &:hover::after{
+        left: 0;
     }
     
 }
